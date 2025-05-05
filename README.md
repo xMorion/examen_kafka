@@ -7,6 +7,13 @@ Este proyecto simula la recolección de métricas de sistema, las envía a un to
 - `src/`: contiene el productor y consumidor
 - `requirements.txt`: dependencias necesarias
 
+## Explicacion del codigo
+
+Este programa genera una prueba de escritura/lectura en topicos de kafka dentro de una maquina docker.
+
+El producer genera un topico (si no existe) y guarda unos datos ficticios cada 10 segundos en un topico de kafka.
+Mientras que el consumer recoge los datos del topico y los escribe en una BD de MongoDB. A su vez, el consumer tambien guarda unos KPI cada vesz que recibe 20 mensajes que guarda en una coleccion distinta de MongoDB a la que guarda los datos en bruto
+
 ## Uso
 
 1. Ejecuta el productor:
