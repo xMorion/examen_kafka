@@ -1,0 +1,5 @@
+| Librería        | ¿Para qué sirve?                                                       |
+| ----------------| ---------------------------------------------------------------------- |
+| confluent-kafka | Cliente Kafka (productor y consumidor compatible con Apache Kafka).    |
+| pymongo         | Cliente para conectarte y trabajar con MongoDB Atlas.                  |
+| psutil          | Solo si estás generando métricas del sistema (usado por el productor). |
